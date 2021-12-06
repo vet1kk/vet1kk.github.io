@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: "Open Sans", serif;
+    font-size: 14px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    padding: 48px 0;
+}
+
+.container.first-section {
+    background-color: #47b0f2;
+}
+
+.container .content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.container .content .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 16px;
+}
+
+.container .content .text h1 {
+    font-size: 38px;
+    color: white;
+    font-family: Montserrat, serif;
+}
+
+.container .content .text h1 span {
+    font-size: 60px;
+}
+
+.container .content .text p {
+    margin-top: 24px;
+}
+
+.container .content .text .button-container {
+    display: flex;
+}
+
+.container .content .text .button-container button {
+    background-color: #ffd429;
+    margin-top: 24px;
+    padding: 8px 16px;
+    border: 0;
+    cursor: pointer;
+}
+
+.container .content .text button:active {
+    top: 1px;
+    position: relative;
+}
+
+.container .content .text p {
+    font-size: 16px;
+    color: white;
+}
+
+.container .content .img {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.container .content .img img {
+    width: 100%;
+    max-width: 520px;
+}
+
+@media (max-width: 767px) {
+    .container .content {
+        flex-direction: column-reverse;
+    }
+
+    .container .content .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 36px;
+    }
+
+    .container .content .text {
+        text-align: center;
+    }
+
+    .container .content .text h1 {
+        font-size: 24px;
+    }
+
+    .container .content .text .button-container {
+        justify-content: center;
+    }
+
+    .container .content .text h1 span {
+        font-size: 32px;
+    }
+
+}
+
+.container.first-section .content .logo {
+position: absolute;
+    left: 16px;
+    top: 0;
+}
+.container.first-section .content{
+    position: relative;
+}
