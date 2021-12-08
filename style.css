@@ -237,7 +237,11 @@ html, body {
     }
 
     .container.second-section {
-        max-height: fit-content;
+        max-height: 120%;
+        height: 120%;
+    }
+    .container.second-section .content .img-text-section .img-text-second-section{
+        margin-top: 20px;
     }
 }
 
