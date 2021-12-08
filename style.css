@@ -18,22 +18,22 @@ html, body {
 
 .container.second-section .content .img-text-section .img-text-second-section p {
     text-align: center;
-    font-size: 14px;
+    margin: 0
 }
 
 .container {
     width: 100%;
     display: flex;
-    padding: 48px 0;
-    height: 100%;
+    padding: 92px 0;
 }
 
 .container.first-section {
     background-color: #47b0f2;
-    max-height: 824px;
+    padding: 20px 0 92px 0;
+    flex-direction: column;
 }
 
-.container .content {
+.container .content, .container.first-section .logo {
     width: 100%;
     max-width: 1171px;
     display: flex;
@@ -87,6 +87,11 @@ html, body {
     position: relative;
 }
 
+.container.third-section .content .form button:active {
+    top: 1px;
+    position: relative;
+}
+
 .container .content .text p {
     font-size: 16px;
     color: white;
@@ -108,44 +113,6 @@ html, body {
     left: -60px;
 }
 
-@media (max-width: 875px) {
-    .container .content {
-        flex-direction: column-reverse;
-    }
-
-    .container .content .img {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .container .content .img img {
-        width: 100%;
-        justify-content: center;
-        max-width: 587px;
-        top: 80px;
-        left: 0;
-    }
-
-    .container .content .text {
-        text-align: center;
-    }
-
-    .container .content .text h1 {
-        font-size: 24px;
-        margin-top: 65px;
-    }
-
-    .container .content .text .button-container {
-        justify-content: center;
-    }
-
-    .container .content .text h1 span {
-        font-size: 32px;
-    }
-
-}
 
 .container.first-section .content .text .text-in {
     display: flex;
@@ -154,18 +121,13 @@ html, body {
     top: -34px;
 }
 
-.container.first-section .content .logo {
-    position: absolute;
-    left: 16px;
-    top: 0;
+.container.first-section .logo {
+    justify-content: flex-start;
 }
 
-.container.first-section .content {
-    position: relative;
-}
-
-.container.second-section {
-    max-height: 500px;
+.container.first-section .logo img {
+    padding-left: 16px;
+    margin-top: 60px;
 }
 
 .container.second-section .content .img-text-section {
@@ -202,7 +164,8 @@ html, body {
 }
 
 .text-second-section {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
     font-size: 20px;
     text-align: center
 }
@@ -221,26 +184,19 @@ html, body {
 
 .container.second-section .content .head-text-second-section {
     font-size: 30px;
-    margin-top: 110px;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.img-second-section {
-    margin-bottom: 40px;
-}
 
 @media (max-width: 1000px) {
     .container.second-section .content .img-text-section {
         flex-direction: column;
     }
 
-    .container.second-section {
-        max-height: 120%;
-        height: 120%;
-    }
-    .container.second-section .content .img-text-section .img-text-second-section{
+
+    .container.second-section .content .img-text-section .img-text-second-section {
         margin-top: 20px;
     }
 }
@@ -255,8 +211,6 @@ html, body {
 
 .container.third-section {
     background-color: #ecf3f8;
-    max-height: 600px;
-
 }
 
 .container.third-section .content .form .form-el {
@@ -281,8 +235,7 @@ html, body {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-height: 140px;
-    height: 100%;
+    padding: 60px 0;
 }
 
 .footer div {
@@ -290,4 +243,46 @@ html, body {
     align-content: center;
     color: white;
     align-items: center;
+    margin: 0 auto;
+}
+@media (max-width: 875px) {
+    .container .content {
+        flex-direction: column-reverse;
+    }
+
+    .container .content .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .container.first-section .logo img{
+        padding-left: 30px;
+    }
+
+    .container .content .img img {
+        width: 100%;
+        justify-content: center;
+        max-width: 587px;
+        top: 26px;
+        left: 0;
+    }
+
+    .container .content .text {
+        text-align: center;
+    }
+
+    .container .content .text h1 {
+        font-size: 24px;
+        margin-top: 65px;
+    }
+
+    .container .content .text .button-container {
+        justify-content: center;
+    }
+
+    .container .content .text h1 span {
+        font-size: 32px;
+    }
+
 }
