@@ -70,18 +70,27 @@ html, body {
 
 .container .content .text .button-container button {
     margin-top: 24px;
+    width: 100%;
 }
-
+.container.third-section .content .form .button-container{
+    width: 100%;
+    justify-content: center;
+}
 .container .content .text .button-container button, .container.third-section .content .form .button-container button {
     background-color: #ffd429;
     border: 0;
     cursor: pointer;
     font-family: Montserrat, serif;
     font-weight: bold;
-    width: 348px;
     height: 51px;
+    border-radius: 6px;
 }
-
+.container .content .text .button-container button{
+    width:345px;
+}
+.container.third-section .content .form .button-container button{
+    width: 100%;
+}
 .container .content .text button:active {
     top: 1px;
     position: relative;
@@ -177,7 +186,7 @@ html, body {
 }
 
 .text-third-section {
-    margin: 110px 0 64px 0;
+    margin: 0 0 64px 0;
     font-size: 30px;
     text-align: center;
     padding: 0 16px;
@@ -202,13 +211,14 @@ html, body {
     }
 }
 
-.container.third-section .content, .form {
+.container.third-section .content, .form, .container.third-section .content, .form form {
     flex-direction: column;
     display: flex;
     align-items: center;
 
 
 }
+
 
 .container.third-section {
     background-color: #ecf3f8;
@@ -221,14 +231,12 @@ html, body {
     background-color: #ffffff;
     border-radius: 6px;
     border-color: lightgray;
+    padding: 0 20px;
 
 }
 
 .container.third-section .content .form .form-el::placeholder {
-    padding-left: 20px;
     color: gray;
-    font-family: "Open Sans", serif;
-    font-size: 14px
 }
 
 .footer {
@@ -246,6 +254,7 @@ html, body {
     align-items: center;
     margin: 0 auto;
 }
+
 @media (max-width: 875px) {
     .container .content {
         flex-direction: column-reverse;
@@ -257,7 +266,8 @@ html, body {
         justify-content: center;
 
     }
-    .container.first-section .logo img{
+
+    .container.first-section .logo img {
         padding-left: 30px;
     }
 
