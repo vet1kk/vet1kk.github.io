@@ -85,12 +85,12 @@ html, body {
 
 }
 
-.first-section .content .text .button-container {
+.first-section .content .text .btn {
     display: flex;
     align-items: center;
 }
 
-.first-section .content .text .button-container button {
+.first-section .content .text .btn button {
     background-color: #ffd429;
     border: 0;
     cursor: pointer;
@@ -103,7 +103,7 @@ html, body {
     max-width: 280px;
 }
 
-.first-section .content .text .button-container button:active {
+.first-section .content .text .btn button:active {
     top: 1px;
     position: relative;
 }
@@ -130,7 +130,7 @@ html, body {
     flex-direction: column;
 }
 
-.second-section .content .head-text-second-section {
+.second-section .content .header {
     font-family: Montserrat, serif;
     font-weight: bold;
     font-size: 30px;
@@ -141,32 +141,32 @@ html, body {
 }
 
 
-.second-section .content .img-text-section {
+.second-section .content .body-second-section {
     width: 100%;
     margin-top: 72px;
     display: flex;
     justify-content: space-between;
 }
 
-.second-section .content .img-text-section .img-text-second-section {
+.second-section .content .body-second-section .column-second-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
 }
 
-.second-section .content .img-text-section .img-text-second-section.img-second-section {
+.second-section .content .body-second-section .column-second-section .image {
     display: flex;
     justify-content: center;
 
 }
 
-.second-section .content .img-text-section .img-text-second-section.img-second-section img {
+.second-section .content .body-second-section .column-second-section .image img {
     height: 70px;
     width: auto;
 }
 
-.second-section .content .img-text-section .img-text-second-section .text-second-section {
+.second-section .content .body-second-section .column-second-section .text {
     margin-bottom: 20px;
     margin-top: 30px;
     font-size: 20px;
@@ -176,7 +176,7 @@ html, body {
 }
 
 
-.second-section .content .img-text-section .img-text-second-section p {
+.second-section .content .body-second-section .column-second-section p {
     text-align: center;
     margin: 0
 }
@@ -193,7 +193,7 @@ html, body {
     align-items: center;
 }
 
-.third-section .content .text-third-section {
+.third-section .content .header {
     font-family: Montserrat, serif;
     font-weight: bold;
     margin: 0 0 64px 0;
@@ -231,14 +231,14 @@ html, body {
     color: gray;
 }
 
-.third-section .content .form .button-container {
+.third-section .content .form .btn {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: center;
 }
 
-.third-section .content .form .button-container button {
+.third-section .content .form .btn button {
     background-color: #ffd429;
     border: 0;
     cursor: pointer;
@@ -291,7 +291,7 @@ html, body {
         font-size: 32px;
     }
 
-    .first-section .content .text .button-container {
+    .first-section .content .text .btn {
         justify-content: center;
     }
 
@@ -318,12 +318,12 @@ html, body {
 }
 
 @media (max-width: 1000px) {
-    .second-section .content .img-text-section {
+    .second-section .content .body-second-section {
         flex-direction: column;
     }
 
 
-    .second-section .content .img-text-section .img-text-second-section {
+    .second-section .content .body-second-section .column-second-section {
         margin-top: 20px;
     }
 }
