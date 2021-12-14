@@ -203,42 +203,47 @@ html, body {
 
 }
 
-.third-section .content .form {
+.third-section .content .form-box {
     flex-direction: column;
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 340px;
 }
 
-.third-section .content .form form {
+.third-section .content .form-box form {
     flex-direction: column;
     display: flex;
     align-items: center;
+    width: 100%;
+
+
 }
 
 
-.third-section .content .form .form-el {
-    margin-bottom: 16px;
-    width: 340px;
+.third-section .content .form-box .form-el {
     height: 45px;
     background-color: #ffffff;
+    border: 1px solid lightgray;
     border-radius: 6px;
-    border-color: lightgray;
     padding: 0 20px;
+    width: calc(100% - 80px);
+    margin: 0 20px 16px 20px;
 
 }
 
-.third-section .content .form .form-el::placeholder {
+.third-section .content .form-box .form-el::placeholder {
     color: gray;
 }
 
-.third-section .content .form .btn {
+.third-section .content .form-box .btn {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: center;
 }
 
-.third-section .content .form .btn button {
+.third-section .content .form-box .btn button {
     background-color: #ffd429;
     border: 0;
     cursor: pointer;
@@ -246,10 +251,11 @@ html, body {
     font-weight: bold;
     height: 51px;
     border-radius: 6px;
-    width: 100%
+    width: 100%;
+    margin: 0 20px;
 }
 
-.third-section .content .form button:active {
+.third-section .content .form-box button:active {
     top: 1px;
     position: relative;
 }
@@ -325,5 +331,11 @@ html, body {
 
     .second-section .content .body-second-section .column-second-section {
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 1275px) {
+    .first-section .content .img img {
+        width: 100%
     }
 }
